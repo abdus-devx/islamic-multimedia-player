@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multimedia Player</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #d2d2eb;
+      margin: 0;
+      padding: 40px 0;
+    }
+
+    .container {
+    max-width: 900px;
+    background: white;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+     text-align: center;
+     font-weight: 700;
+     margin-bottom: 40px;
+    }
+
+    h2 {
+     text-align: left;
+     font-size: 1.2rem;
+     margin-bottom: 10px;
+    }
+
+    p {
+     line-height:1.6;
+     color: #555;
+    }
+    section {
+    margin-bottom: 30px;
+    }
+
+    .player-layout {
+     display: flex;
+     gap: 40px;
+     align-items: flex-start;
+     flex-wrap: wrap;
+    }
+
+    .left-panel {
+     flex: 1;
+    }
+
+    .right-panel {
+     flex: 1.2;
+    }
+    audio {
+     width: 100%;
+     margin-top: 10px;
+    }
+    video {
+     width: 100%;
+     border-radius: 10px;
+     background: black;
+     box-shadow: 0 10px 30px rgba(0,0,0,0.25)
+    }
+
+    @media (max-width: 768px) {
+    
+      .player-layout {
+       flex-direction: column;
+      }
+
+      .left-panel,
+      .right-panel {
+        width: 100%;
+      }
+    }
+
+    .left-panel section {
+      background: #f9fafc;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .qori {
+     width: 100%;
+     border-radius: 15px;
+    }
+    ul {
+    padding-left: 20px;
+}
+    li {
+margin-bottom: 6px;
+}
+  </style>
+</head>
+
+<body>
+<div class="container">
+<h1>Islamic Multimedia Player</h1>
+<div class="player-layout">
+  <!--KIRI-->
+  <div class="left-panel">
+    <section>
+      <h2>Now Playing: Wadee Hammadi Al Yamani - Surah At Thur</h2>
+      <audio controls aria-label="Surah Al Maidah Qory Misyari Rasyid Alafasy">
+      <source src="https://download.quranicaudio.com/quran/wadee_hammadi_al-yamani/opus/052.opus" type="audio/mpeg">
+      </audio>
+      <img class="qori"src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtKYhtWp8yaNV7oT3-7CILFHbt9KAY3S42bD8Q2aGxM4FxV87dsmQ1E3PfQO4mWjRuhq1Son13OZ89lpM4j4pIC-cMuVpJIHQcPtoe7VFrXV-fDuursZrLysrckh2YkIO4JogSj1RTXZHJPqUw3viiJhNaE6x5RJvWZMU_Fi5J3NLboWmEEqLzEgzbK1Y/s1024/wadee.png" alt="Foto Syaikh Wadee Hammadi Al Yamani didepan mic">
+      <h2>🧾 Brief Information</h2>
+      <p><b>Full Name:</b> Wadee Hammadi Al Yamani (وديع حمادي اليماني)</p>
+      <p><b>Nationality:</b> Yemeni / Saudi (known as a Yemeni-origin Qur’an reciter active in Saudi Arabia)
+      </p>
+      <p><b>Field:</b> Qari (Qur’an reciter), Imam, and Qur’an teacher</p>
+      <h3>🏔 Why Is It Called “At-Tur”?</h3>
+<p>
+  “At-Tur” means Mount Sinai (the place where Prophet Musa received revelation).<br>
+  Number of verses: 49 <br>
+  Classification: Makkiyah Surah (revealed before the Hijrah)
+</p>
+<p>Some verses were revealed as a response to:</p>
+<ul>
+  <li>The accusation that the Prophet was a poet</li>
+  <li>The claim that the Qur’an was fabricated</li>
+  <li>The stubbornness of the Quraysh</li>
+</ul>
+    </section>
+  </div>
+
+  <!--KANAN-->
+  <div class="right-panel">
+    <section>
+      <h2>Reading the Qur'an with a beautiful view</h2>
+      <video controls width="400" aria-label="Alquran terbuka disisi dalam jendela rumah tingkat">
+      <source src="https://videos.pexels.com/video-files/8576079/8576079-hd_1080_1920_30fps.mp4" type="video/mp4">
+      <track src="https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.vtt" kind="subtitles" srclang="en" label="English">
+      </video>
+    </section>
+    <section>
+      <h2>Relaxing, reading, and listening to the Qur'an with a beautiful view in a video</h2>
+      <p>This video invites you to relax while reading and listening to the Qur'an,
+accompanied by a beautiful and peaceful natural view. It is designed to help
+you find calm, focus, and spiritual comfort in your daily life.</p>
+    </section>
+  </div>
+</div>
+</div>
+</body>
+
+</html>
+
