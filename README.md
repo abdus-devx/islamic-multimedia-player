@@ -1,4 +1,7 @@
 # 🕌 Islamic Multimedia Player
+## 📸 Preview
+
+![Project Preview](preview.png)
 
 A responsive Islamic multimedia web player built using HTML5 and CSS3.  
 This project integrates audio recitation, video playback, and structured informational content into a clean and modern layout.
