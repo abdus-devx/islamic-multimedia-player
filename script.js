@@ -1,9 +1,5 @@
-console.log("Hallo, ini Abdus");
+const playerTitle = 'Islamic Multimedia Player';
+let surahName = 'at-Thur';
+let isPlaying = true;
 
-alert("Islamic Player Siap");
-confirm("Ok Siap")
-
-prompt("Siap main JS");
-
-
-
+console.log(`now playing ${surahName} on ${playerTitle} status: ${isPlaying}`);
