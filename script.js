@@ -1,6 +1,6 @@
 const playerTitle = 'Islamic Multimedia Player';
-let surahName = 'at-Thur';
-let isPlaying = true;
+let surahName = null;
+let isPlaying = false;
 
 
 
@@ -11,3 +11,6 @@ if (isPlaying) {
 } else {
     console.log('no surah selected')
 }
+
+const status = isPlaying ? 'Currently playing' : 'Ready to play';
+console.log(status);
