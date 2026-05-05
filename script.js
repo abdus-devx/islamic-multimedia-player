@@ -14,3 +14,9 @@ if (isPlaying) {
 
 const status = isPlaying ? 'Currently playing' : 'Ready to play';
 console.log(status);
+
+let daftarSurah = ['al-fatihah', 'al-baqoroh', 'ali imaran', 'an-nisa', 'al-maidah'];
+
+for (let i = 0; i < daftarSurah.length; i++) {
+    console.log(daftarSurah[i]);
+}
