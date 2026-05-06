@@ -20,3 +20,10 @@ let daftarSurah = ['al-fatihah', 'al-baqoroh', 'ali imaran', 'an-nisa', 'al-maid
 for (let i = 0; i < daftarSurah.length; i++) {
     console.log(daftarSurah[i]);
 }
+
+function displaySurah(nomor, name) {
+    return 'playing surah:' + nomor + '. ' + name;
+}
+
+let result = displaySurah('01', 'al baqoroh');
+console.log(result); 
