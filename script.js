@@ -21,9 +21,23 @@ for (let i = 0; i < daftarSurah.length; i++) {
     console.log(daftarSurah[i]);
 }
 
-function displaySurah(nomor, name) {
+function displaySurah(nomor, name = 'Unknown Surah') {
     return 'playing surah:' + nomor + '. ' + name;
 }
 
 let result = displaySurah('01', 'al baqoroh');
 console.log(result); 
+
+let result1 = displaySurah('01');
+console.log(result1);
+
+function hitungLuas(panjang, lebar) {
+    let hasil = panjang * lebar;
+    return hasil;
+}
+
+let output = hitungLuas(5, 10);
+console.log(output); 
+
+// APA YANG TERJADI DISINI?
+console.log(hasil); 
