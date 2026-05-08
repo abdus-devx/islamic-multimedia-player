@@ -31,13 +31,6 @@ console.log(result);
 let result1 = displaySurah('01');
 console.log(result1);
 
-function hitungLuas(panjang, lebar) {
-    let hasil = panjang * lebar;
-    return hasil;
-}
+const playSurah = (nomor, name  = 'Unknown Surah') => 'Playing surah:' + nomor+'. '+ name;
 
-let output = hitungLuas(5, 10);
-console.log(output); 
-
-// APA YANG TERJADI DISINI?
-console.log(hasil); 
+console.log(playSurah('03', 'Ali Imran'));
