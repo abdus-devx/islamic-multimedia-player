@@ -34,3 +34,8 @@ console.log(result1);
 const playSurah = (nomor, name  = 'Unknown Surah') => 'Playing surah:' + nomor+'. '+ name;
 
 console.log(playSurah('03', 'Ali Imran'));
+
+let buah = [ 'pisang', 'apel', 'jeruk', 'manga', 'nanas'];
+buah.forEach((daftarBuah, nomor)=> {
+     console.log(`Buah ke-${nomor + 1} : ${daftarBuah}`)
+});
