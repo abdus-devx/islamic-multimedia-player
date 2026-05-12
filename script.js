@@ -35,7 +35,24 @@ const playSurah = (nomor, name  = 'Unknown Surah') => 'Playing surah:' + nomor+'
 
 console.log(playSurah('03', 'Ali Imran'));
 
-let buah = [ 'pisang', 'apel', 'jeruk', 'manga', 'nanas'];
+const buah = [ 'pisang', 'apel', 'jeruk', 'manga', 'nanas'];
 buah.forEach((daftarBuah, nomor)=> {
      console.log(`Buah ke-${nomor + 1} : ${daftarBuah}`)
 });
+
+const car = ['alphard', 'vellfire', 'lexus', 'staria'];
+car.forEach((listCar, number)=> {
+    console.log(`My Car ${number + 1} : ${listCar}`)
+});
+
+const buahBesar = buah.map((isiBuah)=> {
+    const ubahjadiBesar = isiBuah.toUpperCase();
+    return ubahjadiBesar;
+});
+
+console.log(buahBesar);
+
+const fruits = [ 'apple', 'mango', 'orange', 'avocado', 'watermelon' ];
+const longFruits = fruits.map(jadiPanjang => `Fruit: ${jadiPanjang}`);
+
+console.log(longFruits);
