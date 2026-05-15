@@ -69,3 +69,17 @@ const siswaLulus = students.filter(josPisan => josPisan.nilai > 80);
 const ucapan = siswaLulus.map(selamat => `Selamat ${selamat.nama}  kamu lulus!` )
 
 console.log(ucapan);
+
+const products = [
+  { name: "Laptop", category: "Electronics", price: 1200 },
+  { name: "Shirt", category: "Clothing", price: 50 },
+  { name: "Phone", category: "Electronics", price: 800 },
+  { name: "Shoes", category: "Clothing", price: 80 },
+  { name: "Headphone", category: "Electronics", price: 150 },
+  { name: "Jacket", category: "Clothing", price: 120 }
+];
+
+const electronicProducts = products.filter(item => item.category === 'Electronics');
+const productList = electronicProducts.map(elektro => `Product: ${elektro.name} - Price: $${elektro.price}`);
+
+console.log(productList);
