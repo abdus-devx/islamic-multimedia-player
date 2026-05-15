@@ -56,3 +56,16 @@ const fruits = [ 'apple', 'mango', 'orange', 'avocado', 'watermelon' ];
 const longFruits = fruits.map(jadiPanjang => `Fruit: ${jadiPanjang}`);
 
 console.log(longFruits);
+
+const students = [
+  { nama: "Budi", umur: 17, nilai: 85 },
+  { nama: "Ani", umur: 16, nilai: 92 },
+  { nama: "Candra", umur: 17, nilai: 60 },
+  { nama: "Dedi", umur: 18, nilai: 78 },
+  { nama: "Eka", umur: 16, nilai: 90 }
+];
+
+const siswaLulus = students.filter(josPisan => josPisan.nilai > 80);
+const ucapan = siswaLulus.map(selamat => `Selamat ${selamat.nama}  kamu lulus!` )
+
+console.log(ucapan);
