@@ -83,3 +83,58 @@ const electronicProducts = products.filter(item => item.category === 'Electronic
 const productList = electronicProducts.map(elektro => `Product: ${elektro.name} - Price: $${elektro.price}`);
 
 console.log(productList);
+
+//DAY 6: OBJECT MASTERY
+
+const currentSurah ={ 
+    title: 'al-Fatihah',
+    reciter: 'Misyari Rashid Alafasy',
+    duration: 60,// in second
+    // nest object 
+    details: {
+        ayat: 7,
+        place: 'Meccan'
+ 
+   },
+   play: function() {
+    this.isPlaying = true;
+    return 'Now Playing: ' + this.title;
+   },
+   pause: function() {
+    this.isPlaying = false;
+    return 'paused: ' + this.title;
+   }
+}
+
+console.log(currentSurah.title);
+
+const playingSurah = currentSurah.play();
+console.log(playingSurah);
+
+const {title, reciter,details} = currentSurah;
+console.log(title);
+console.log(reciter);
+console.log(details.ayat);
+
+const newSurah = {...currentSurah, title: 'al-Baqoroh', duration: 120 };
+console.log(newSurah);
+
+// OBJEK 1: Data Awal / Data Lama
+const dataLama = {
+  nama: "Al-Fatihah",
+  durasi: 60,
+  jumlahAyat: 7
+};
+
+// OBJEK 2: Data Baru / Data Tambahan
+const dataBaru = {
+  nama: "Al-Baqarah", // ⬅ NAMA PROPERTI SAMA: "nama", tapi isinya beda!
+  durasi: 120,        // ⬅ NAMA PROPERTI SAMA: "durasi", isinya beda!
+  kategori: "Madaniyah" // ⬅ Ini baru, gak ada di dataLama
+};
+
+// 🔽 KITA GABUNGKAN PAKAI SPREAD OPERATOR
+const hasilGabungan = { ...dataLama, ...dataBaru };
+
+// 🔽 LIHAT HASILNYA
+console.log(hasilGabungan);
