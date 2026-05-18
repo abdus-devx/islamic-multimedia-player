@@ -186,3 +186,25 @@ const mobil = {
 for (const data in mobil) {
  console.log(`${data}:${mobil[data]} `)
 }
+
+const productList1 = [
+  { id: 1, name: "Laptop", price: 8500000, stock: 15, category: "Electronics" },
+  { id: 2, name: "Batik Shirt", price: 175000, stock: 0, category: "Clothing" },
+  { id: 3, name: "Smartphone", price: 3200000, stock: 25, category: "Electronics" },
+  { id: 4, name: "Jeans", price: 250000, stock: 10, category: "Clothing" },
+  { id: 5, name: "Electric Fan", price: 450000, stock: 3, category: "Electronics" },
+  { id: 6, name: "Sports Shoes", price: 400000, stock: 0, category: "Clothing" }
+];
+
+for (const item of productList1){
+    if (item.stock === 0) continue;
+    let note = "(Reguler Price)";
+    if (item.category === "Electronics" && item.price > 1000000) {
+        item.price = item.price*0.9;
+        note = "(10% Discount Applied)";
+
+    };
+    console.log(`${item.name.toUpperCase()} | Price: Rp ${item.price.toLocaleString('id-ID')} | Stock: ${item.stock} | ${note}`); //method 1 - variable
+
+    console.log(`${item.name.toUpperCase()} | Price: Rp ${item.price.toLocaleString('id-ID')} | Stock: ${item.stock} | ${item.category === "Electronics" && item.price > 1000000 ? "(10% Discount Applied)" : "(Reguler Price)"}`); //method 2 - ternary operator
+};
