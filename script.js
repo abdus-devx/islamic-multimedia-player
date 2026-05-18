@@ -164,3 +164,25 @@ while(angka <=50) {
 for ( let i=1 ; i<=20; i++) {
     console.log(i % 2 === 0 ? `Angka ${i} adalah GENAP`:`Angka ${i} adalah GANJIL`);
 }
+
+const daftarProduk = [
+  { nama: "Sepatu Lari", harga: 250000, stok: 10 },
+  { nama: "Baju Kemeja", harga: 120000, stok: 15 },
+  { nama: "Tas Ransel", harga: 175000, stok: 8 },
+  { nama: "Topi Baseball", harga: 50000, stok: 20 }
+];
+
+for (const item of daftarProduk) {
+    console.log(`Produk: ${item.nama} | Harga: Rp ${item.harga.toLocaleString('id-ID')} | Sisa Stok: ${item.stok}`)
+}
+
+const mobil = {
+  merk: "Toyota",
+  model: "Avanza",
+  tahun: 2023,
+  warna: "Hitam"
+};
+
+for (const data in mobil) {
+ console.log(`${data}:${mobil[data]} `)
+}
