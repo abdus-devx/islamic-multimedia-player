@@ -138,3 +138,29 @@ const hasilGabungan = { ...dataLama, ...dataBaru };
 
 // 🔽 LIHAT HASILNYA
 console.log(hasilGabungan);
+
+for ( let i=2; i<=20; i+=2) {
+    console.log(i);
+};
+
+let hitungan = 10;
+
+while (hitungan > 0) {
+    console.log('mundur:', hitungan);
+    hitungan -=1;
+    
+}
+
+for (let i=5; i<=50; i+=5) {
+    console.log(`angka: ${i}`);
+}
+
+let angka = 5;
+while(angka <=50) {
+    console.log(`Angka: ${angka}` );
+    angka +=5
+}
+
+for ( let i=1 ; i<=20; i++) {
+    console.log(i % 2 === 0 ? `Angka ${i} adalah GENAP`:`Angka ${i} adalah GANJIL`);
+}
