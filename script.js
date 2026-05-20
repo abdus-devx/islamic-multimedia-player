@@ -198,13 +198,15 @@ const productList1 = [
 
 for (const item of productList1){
     if (item.stock === 0) continue;
+
+    let finalPrice = item.price;
     let note = "(Reguler Price)";
     if (item.category === "Electronics" && item.price > 1000000) {
-        item.price = item.price*0.9;
+        finalPrice = finalPrice*0.9;
         note = "(10% Discount Applied)";
 
     };
-    console.log(`${item.name.toUpperCase()} | Price: Rp ${item.price.toLocaleString('id-ID')} | Stock: ${item.stock} | ${note}`); //method 1 - variable
+    console.log(`${item.name.toUpperCase()} | Price: Rp ${finalPrice.toLocaleString('id-ID')} | Stock: ${item.stock} | ${note}`); //method 1 - variable
 
-    console.log(`${item.name.toUpperCase()} | Price: Rp ${item.price.toLocaleString('id-ID')} | Stock: ${item.stock} | ${item.category === "Electronics" && item.price > 1000000 ? "(10% Discount Applied)" : "(Reguler Price)"}`); //method 2 - ternary operator
+    console.log(`${item.name.toUpperCase()} | Price: Rp ${finalPrice.toLocaleString('id-ID')} | Stock: ${item.stock} | ${item.category === "Electronics" && item.price > 1000000 ? "(10% Discount Applied)" : "(Reguler Price)"}`); //method 2 - ternary operator
 };
