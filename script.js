@@ -1,4 +1,4 @@
-const playerTitle = 'Islamic Multimedia Player';
+/* const playerTitle = 'Islamic Multimedia Player';
 let surahName = null;
 let isPlaying = false;
 
@@ -209,4 +209,8 @@ for (const item of productList1){
     console.log(`${item.name.toUpperCase()} | Price: Rp ${finalPrice.toLocaleString('id-ID')} | Stock: ${item.stock} | ${note}`); //method 1 - variable
 
     console.log(`${item.name.toUpperCase()} | Price: Rp ${finalPrice.toLocaleString('id-ID')} | Stock: ${item.stock} | ${item.category === "Electronics" && item.price > 1000000 ? "(10% Discount Applied)" : "(Reguler Price)"}`); //method 2 - ternary operator
+}; */
+
+const playerContent = {
+ mainTitle : document.getElementById('mainTitle')
 };
