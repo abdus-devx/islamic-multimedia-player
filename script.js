@@ -212,5 +212,25 @@ for (const item of productList1){
 }; */
 
 const playerContent = {
- mainTitle : document.getElementById('mainTitle')
+ mainTitle: "Now Playing: Wadee Hammadi Al Yamani - Surah At Thur",
+ audioSrc: "https://download.quranicaudio.com/quran/wadee_hammadi_al-yamani/opus/052.opus",
+ qoriImg: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtKYhtWp8yaNV7oT3-7CILFHbt9KAY3S42bD8Q2aGxM4FxV87dsmQ1E3PfQO4mWjRuhq1Son13OZ89lpM4j4pIC-cMuVpJIHQcPtoe7VFrXV-fDuursZrLysrckh2YkIO4JogSj1RTXZHJPqUw3viiJhNaE6x5RJvWZMU_Fi5J3NLboWmEEqLzEgzbK1Y/s1024/wadee.png",
+
+profile: {
+fullName: "Wadee Hammadi Al Yamani (وديع حمادي اليماني)",
+nationality: "Yemeni / Saudi (known as a Yemeni-origin Qur'an reciter active in Saudi Arabia)",
+profession: "Qari (Qur'an reciter), Imam, and Qur'an teacher"
+},
+
+surahInfo: {
+aboutSurah: "🏔 Why Is It Called “At-Tur”?",
+surahDesc: `“At-Tur” means Mount Sinai (the place where Prophet Musa received revelation).
+Number of verses: 49 
+Classification: Makkiyah Surah (revealed before the Hijrah)
+
+Some verses were revealed as a response to:
+The accusation that the Prophet was a poet
+The claim that the Qur'an was fabricated
+The stubbornness of the Quraysh`
+}
 };
