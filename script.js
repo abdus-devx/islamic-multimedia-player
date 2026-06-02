@@ -211,10 +211,11 @@ for (const item of productList1){
     console.log(`${item.name.toUpperCase()} | Price: Rp ${finalPrice.toLocaleString('id-ID')} | Stock: ${item.stock} | ${item.category === "Electronics" && item.price > 1000000 ? "(10% Discount Applied)" : "(Reguler Price)"}`); //method 2 - ternary operator
 }; */
 
-const playerContent = {
+const surahList = [{
+ id: 0,
  mainTitle: "Now Playing: Wadee Hammadi Al Yamani - Surah At Thur",
  audioSrc: "https://download.quranicaudio.com/quran/wadee_hammadi_al-yamani/opus/052.opus",
- qoriImg: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtKYhtWp8yaNV7oT3-7CILFHbt9KAY3S42bD8Q2aGxM4FxV87dsmQ1E3PfQO4mWjRuhq1Son13OZ89lpM4j4pIC-cMuVpJIHQcPtoe7VFrXV-fDuursZrLysrckh2YkIO4JogSj1RTXZHJPqUw3viiJhNaE6x5RJvWZMU_Fi5J3NLboWmEEqLzEgzbK1Y/s1024/wadee.png",
+ qoriImg: "./images/wadee-al-yamani.avif",
 
 profile: {
 fullName: "Wadee Hammadi Al Yamani (وديع حمادي اليماني)",
@@ -233,4 +234,134 @@ The accusation that the Prophet was a poet
 The claim that the Qur'an was fabricated
 The stubbornness of the Quraysh`
 }
-};
+},
+{
+id: 1,
+mainTitle: "Now Playing: Mishary Rashid Alafasy - Surah Al Mulk",
+audioSrc: "https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/opus/067.opus",
+qoriImg: "./images/Mishary-Rashid-Alafasy.avif"
+
+profile: {
+fullName: "Mishary Rashid Alafasy (مشاري راشد العفاسي)",
+nationality: "Kuwaiti (widely known as a renowned Qur'an reciter and Imam from Kuwait)",
+profession: "Qari (Qur'an reciter), Imam, Preacher, Nasheed artist, and Qur'an teacher"
+},
+
+surahInfo: {
+aboutSurah: "👑 Why Is It Called “Al-Mulk”?",
+surahDesc: `“Al-Mulk” means The Sovereignty (the absolute dominion belonging only to Allah).
+Number of verses: 30
+Classification: Makkiyah Surah (revealed before the Hijrah)
+
+Some verses emphasize:
+Allah's complete control over the heavens and the earth
+The purpose of life and death as a test
+The consequences for those who reject faith
+The blessings and signs found throughout creation
+The importance of reflecting upon Allah's power and mercy`
+}
+},
+{
+id: 2,
+mainTitle: "Now Playing: Hani Ar-Rifai - Surah Al Fajr",
+audioSrc: "https://download.quranicaudio.com/quran/rifai/opus/089.opus",
+qoriImg: "./images/Hani-Ar-Rifai.avif"
+
+profile: {
+fullName: "Hani Abdul Rahman Ar-Rifai (هاني عبد الرحمن الرفاعي)",
+nationality: "Saudi Arabian (widely known as a prominent Qur'an reciter and Imam from Saudi Arabia)",
+profession: "Qari (Qur'an reciter), Imam, Khateeb (Islamic preacher), and Qur'an teacher"
+},
+
+surahInfo: {
+aboutSurah: "🌅 Why Is It Called “Al-Fajr”?",
+surahDesc: `“Al-Fajr” means The Dawn (the first light that appears before sunrise).
+Number of verses: 30
+Classification: Makkiyah Surah (revealed before the Hijrah)
+
+Some verses were revealed to:
+Remind the Quraysh of the fate of earlier arrogant nations
+Warn against pride in wealth and social status
+Condemn the mistreatment of orphans and the needy
+Emphasize the certainty of resurrection and judgment
+Encourage believers to attain a soul that is pleased with Allah`
+}
+},
+{
+id: 3,
+mainTitle: "Now Playing: Abu Bakr Al-Shatri - Surah Ibrahim",
+audioSrc: "https://download.quranicaudio.com/quran/abu_bakr_ash-shatri_tarawee7/opus/014.opus",
+qoriImg: "./images/Abu-Bakr-al-Shatri.avif"
+
+profile: {
+fullName: "Abu Bakr Al-Shatri (أبو بكر الشاطري)",
+nationality: "Saudi Arabian (widely known as a prominent Qur'an reciter and Imam from Saudi Arabia)",
+profession: "Qari (Qur'an reciter), Imam, and Qur'an teacher"
+},
+
+surahInfo: {
+aboutSurah: "🕋 Why Is It Called “Ibrahim”?",
+surahDesc: `“Ibrahim” is named after Prophet Ibrahim (Abraham), whose famous supplication appears in this surah.
+Number of verses: 52
+Classification: Makkiyah Surah (revealed before the Hijrah)
+
+Some verses were revealed to:
+Strengthen the believers during opposition from the Quraysh
+Show the contrast between guidance and misguidance
+Remind people of Allah's countless blessings
+Warn those who reject the message of the prophets
+Highlight the prayers and legacy of Prophet Ibrahim`
+}
+},
+{
+id: 4,
+mainTitle: "Now Playing: Abdullah Al Matrood - Surah Luqman",
+audioSrc: "https://download.quranicaudio.com/quran/abdullah_matroud/opus/031.opus",
+qoriImg: "./images/Abdullah-Al-Matrood.avif"
+
+profile: {
+fullName: "Abdullah Al Matrood (عبد الله المطرود)",
+nationality: "Saudi Arabian (widely known as a respected Qur'an reciter and Imam from Saudi Arabia)",
+profession: "Qari (Qur'an reciter), Imam, and Qur'an teacher"
+},
+
+surahInfo: {
+aboutSurah: "📖 Why Is It Called “Luqman”?",
+surahDesc: `“Luqman” is named after Luqman the Wise, a righteous man known for his wisdom and advice.
+Number of verses: 34
+Classification: Makkiyah Surah (revealed before the Hijrah)
+
+Some verses were revealed to:
+Teach the foundations of faith and Tawhid
+Encourage gratitude to Allah and respect for parents
+Warn against arrogance and pride
+Promote prayer, patience, and righteous conduct
+Invite people to reflect on Allah's signs in creation`
+}
+},
+
+];
+
+const elMainTitle = document.getElementById('mainTitle');
+const elAudioPlayer = document.getElementById('audioPlayer');
+const elAudioSrc = document.getElementById('audioSrc');
+const elQoriImg = document.getElementById('qoriImg');
+const elFullName = document.getElementById('fullName');
+const elNationality = document.getElementById('nationality');
+const elProfession = document.getElementById('profession');
+const elAboutSurah = document.getElementById('aboutSurah');
+const elSurahDesc = document.getElementById('surahDesc');
+
+elMainTitle.textContent = playerContent.mainTitle;
+elFullName.textContent = playerContent.profile.fullName;
+elNationality.textContent = playerContent.profile.nationality;
+elProfession.textContent = playerContent.profile.profession;
+elAboutSurah.textContent = playerContent.surahInfo.aboutSurah;
+elSurahDesc.textContent = playerContent.surahInfo.surahDesc;
+
+elAudioSrc.setAttribute('src', playerContent.audioSrc);
+elQoriImg.setAttribute('src', playerContent.qoriImg);
+
+elAudioPlayer.load();
+
+
